@@ -1,0 +1,58 @@
+/*selecting the container for all the cards*/
+.allCards {
+    /*setting display to flex so i can manipulate where they are on the screen*/
+    display: flex;
+    /*the cards will appear on a horisontal row and will go to the next line if there is no space*/
+    flex-flow: row wrap;
+    /*this means that the cards will be evenly spread out*/
+    justify-content: space-around;
+    /*giving space at the top and bottom of the cards container*/
+    margin: 5vw 0;
+    /*setting the text colour*/
+    color: var(--textColor);
+}
+
+/*selecting the card its self*/
+.card {
+    /*setting the giving space at the top and bottom of the cards and eather side*/
+    margin: 5vw 2vw;
+    /*makes it so the card will move relative to where it would render in the viewport*/
+    position: relative;
+    /*making the background of the card bigger*/
+    padding: 2.5vw;
+    /*giving the rounded edges*/
+    border-radius: 2.5vw;
+    /*setting a fixed height*/
+    height: 450px;
+    /*setting a fixed width*/
+    width: 250px;
+    /*setting the background colour of the card*/
+    background-color: var(--cardColor);
+    /*giving a inner shadow, to give a embossed effect*/
+    box-shadow: inset 0.5vw -1vw 5vw rgba(0,0,0,0.4);
+    /*how long it will take for any new css rules to apply*/
+    transition: 0.3s;
+}
+
+.cardImage {
+    border-radius: 2.5vw;
+    width: 250px;
+    height: auto;
+}
+
+/*when hovering over the card, these rules will apply*/
+.card:hover {
+    /*the card will move up and to the left by -4px and -4px respectivly*/
+    transform: translate(-4px, -4px);
+    /*setting a drop shadow*/
+    box-shadow: 1vw 2.5vw 5vw rgba(0,0,0,0.6);
+}
+
+/*these rules will apply once the viewports width is below 961px*/
+@media only screen and (max-width: 960px) {
+    /*select all*/
+    * {
+        /*setting min font size*/
+        font-size: 19px;
+    }
+}

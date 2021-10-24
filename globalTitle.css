@@ -1,0 +1,30 @@
+/*selecting the container for the title*/
+.gymTitleContainer {
+    /*setting its display value to block, so that nothing appears inline*/
+    display: block;
+    /*setting its width to 100% the width of the viewport*/
+    width: 100%;
+    /*giving a inner shadow, to give a embossed effect*/
+    box-shadow: inset 1vw -2.5vw 5vw rgba(0,0,0,0.6);
+}
+
+/*selecting the title its self*/
+.gymTitle {
+    /*setting its margin to 0, so that it takes up less room*/
+    margin: 0;
+    /*text is centered*/
+    text-align: center;
+    /*setting a relative font size*/
+    font-size: 10em;
+    /*setting the font colour*/
+    color: var(--textColor);
+}
+
+/*when the viewport width reaches a min of 431px and below the following rules apply*/
+@media only screen and (max-width: 540px) {
+    /*selects the title its self*/
+    .gymTitle {
+        /*sets the min font size*/
+        font-size: 6em;
+    }
+}

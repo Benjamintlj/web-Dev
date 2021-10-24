@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--sets the character encoding to unicode-->
+        <meta charset="utf-8">
+        <!--helps with compatablility with microsoft products in this case edge-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--sets the title in the tab-->
+        <title>Homepage</title>
+        <!--Gives the description of the website which search engines will use-->
+        <meta name="description" content="Continued Professional Development - Ben LewisJones">
+        <!--sets the viewport to equal the width of the device screen-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--linking to CSS stylesheets-->
+        <link rel="stylesheet" href="globalVariables.css">
+        <link rel="stylesheet" href="globalHeader.css">
+        <link rel="stylesheet" href="homepageStylesProfile.css">
+        <link rel="stylesheet" href="homepageStylesName.css">
+        <link rel="stylesheet" href="homepageStylesCards.css">
+        <link rel="stylesheet" href="globalFooter.css">
+        <!--linking to google fonts incase user doesnt have the font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Container of the navigation bar and makes it clear that this is the header-->
+        <header>
+            <!--navigation bar tag, and is the flex container-->
+            <nav class='navbar'>
+                <!--all address tags are indidual options for the navbar-->
+                <a href="homepage.html">Home</a>
+                <a href="gym.html">Gym</a>
+                <a href="compSci.html">Comp Sci</a>
+            </nav>
+        </header>
+        <!--Container of the profile pictures-->
+        <section class="profilePicturesSection">
+            <!--container of the main image, so I can manipulate it-->
+            <div class="profileBackgroundImageContainer">
+                <!--actual main image-->
+                <img src="main.jpeg" alt="Me and friends from home" class="mainImg">
+            </div>
+            <!--container of the profile picture, so I can manipulate it-->
+            <div class="profilePictureContainer">
+                <!--actual profile picture-->
+                <img src="profilePicture.jpg" alt="profile picture" class="profilePicture">
+            </div>
+        </section>
+        <!--Container of the Name-->
+        <article class="nameContainer">
+            <!--creates a header with my name in it-->
+            <h1 class="name">Ben Lewis-Jones</h1>
+        </article>
+        <!--Container of the cards-->
+        <main class="allCards">
+            <!--Container for the first card-->
+            <article class="card">
+                <!--Title of the card-->
+                <h2 class="cardHeader">NTU powerlifting club</h2>
+                <!--contains the content of the card-->
+                <div class="cardContent">
+                    <!--paragraph-->
+                    <p class="cardText">This is a club located at the Clifton campus sports center, the the club will meet up every sunday and wednesday. This is the first club i have joined since i have been at NTU. I will explain more on the Gym webpage with photos of me being there. I have gone this has been a great club to meet new people however due to corona virus it has been hard to go as much as I would like!!!</p>
+                </div>
+            </article>
+            <!--Card container-->
+            <article class="card">
+                <!--Title of the card-->
+                <h2 class="cardHeader">Codecademy</h2>
+                <!--Container of the content-->
+                <div class="cardContent">
+                    <!--declairing a table-->
+                    <table>
+                        <!--table column with a paragraph in each-->
+                        <td><p>This is a online learning resource that can help you learn basically any programming language, including python, C, C# and html css and loads of other things!!! I plan on using it for other courses, to help me here at NTU.</p></td>
+                        <td><p>I have personally used Codecademy for a very long time now and it helps me learn programming languages very fast. I have spent a lot of time learning HTML and CSS with Codecademy while here at NTU!!!</p></td>
+                    </table>
+                </div>
+            </article>
+            <!--card container-->
+            <article class="card">
+                <!--Title of the card-->
+                <h2 class="cardHeader">Wickes</h2>
+                <!--container of the content-->
+                <div class="cardContent">
+                    <!--the cards content-->
+                    <p class="cardText">Over the summer of 2020 i had a part time job at Wickes, wickes is a brand that sells all things DIY. I belive this has helped my people skills and trying to solve problems on the move. I think this will help me in the future.</p>
+                </div>
+            </article>
+            <!--card container-->
+            <article class="card">
+                <!--Title of the card-->
+                <h2 class="cardHeader">Dev Soc</h2>
+                <!--container of the content-->
+                <div class="cardContent">
+                    <!--the cards content-->
+                    <p class="cardText">This is a club were people do programming chalenges together, i personally have joined this club in the hopes of becomeing a better developer. There are always more things to learn even even after you might have finished a course on a said topic, and this is a great place to learn those things.</p>
+                </div>
+            </article>
+            <!--card container-->
+            <article class="card">
+                <!--Title of the card-->
+                <h2 class="cardHeader">One to Ones</h2>
+                <!--container of the content-->
+                <div class="cardContent">
+                    <!--the cards content-->
+                    <p class="cardText">Since starting at NTU i have made use of the support the univercity offers, for exsample in the case with MATLAB, i needed help on the topic after contacting tutor i arranged a one to one with them and i was able to complete the task at hand. I belive that this is one of the most important aspects of this univercity!</p>
+                </div>
+            </article>
+        </main>
+        <!--Container of the footer-->
+        <footer class="footerContainer">
+            <!--creating a list-->
+            <ul class="listContainer">
+                <li class="listFooter"><h2>Contact</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus ea commodi numquam beatae labore voluptas provident vero tenetur aspernatur nemo?</p></li>
+                <li class="listFooter"><h2>Address</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus ea commodi numquam beatae labore voluptas provident vero tenetur aspernatur nemo?</p></li>
+                <li class="listFooter"><h2>Email</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus ea commodi numquam beatae labore voluptas provident vero tenetur aspernatur nemo?</p></li>
+            </ul>
+        </footer>
+    </body>
+</html>
